@@ -3,7 +3,13 @@
 **Challenge:** ML Empowerment Build Challenge 3.0  
 **Project Title:** PhishBrake – Private Scam Defense for Someone You Love  
 **Category:** Machine Learning / AI | Social Good | Beginner Friendly  
-**Repository:** [GitHub / Project Files]
+**Repository:** [https://github.com/shankarsai000/PhishBrake](https://github.com/shankarsai000/PhishBrake)
+
+---
+
+## 📹 Demo Preview
+
+![PhishBrake Demo Animation](docs/phishbrake_demo.gif)
 
 ---
 

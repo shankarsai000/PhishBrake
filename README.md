@@ -48,6 +48,8 @@ The problem is specific: scam messages now arrive as urgent, personal, plausible
 
 ## Demo
 
+![PhishBrake Demo Animation](docs/phishbrake_demo.gif)
+
 Run the app locally using the steps in [`SETUP.md`](SETUP.md), then submit a sanitized suspicious message.
 
 ## ML Empowerment Build Challenge 3.0
