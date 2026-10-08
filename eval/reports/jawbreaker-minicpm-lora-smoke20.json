@@ -1,0 +1,158 @@
+{
+  "cases": 20,
+  "category_risk_accuracy": {
+    "bank_phishing": {
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    "family_impersonation": {
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    "job_scam": {
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2
+    },
+    "legitimate_needs_check": {
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2
+    },
+    "package_phishing": {
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    "prize_lottery": {
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2
+    },
+    "safe_benign": {
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2
+    },
+    "tech_support": {
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    }
+  },
+  "dangerous_as_safe": [],
+  "elapsed_seconds": 330.210223283,
+  "failures_by_category": {},
+  "invalid_predictions": [
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "package_phishing_0840"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "bank_phishing_0841"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "family_impersonation_0842"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "tech_support_0843"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "job_scam_0845"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "safe_benign_0847"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "package_phishing_0848"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "bank_phishing_0849"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "family_impersonation_0850"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "tech_support_0851"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "prize_lottery_0852"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "job_scam_0853"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "legitimate_needs_check_0854"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "package_phishing_0856"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "bank_phishing_0857"
+    },
+    {
+      "errors": [
+        "missing fields: ['summary']"
+      ],
+      "id": "tech_support_0859"
+    }
+  ],
+  "mean_tactic_recall": 0.125,
+  "risk_confusion": {
+    "dangerous->dangerous": 16,
+    "needs_check->needs_check": 2,
+    "safe->safe": 2
+  },
+  "risk_level_accuracy": 1.0,
+  "risk_level_correct": 20,
+  "safe_as_dangerous_or_suspicious": [],
+  "scam_type_accuracy": 0.1,
+  "scam_type_correct": 2,
+  "unsafe_action_violations": []
+}

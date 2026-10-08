@@ -1,0 +1,216 @@
+{
+  "cases": 100,
+  "category_risk_accuracy": {
+    "bank_phishing": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "family_impersonation": {
+      "accuracy": 1.0,
+      "correct": 7,
+      "total": 7
+    },
+    "gift_card": {
+      "accuracy": 1.0,
+      "correct": 7,
+      "total": 7
+    },
+    "job_scam": {
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2
+    },
+    "needs_check": {
+      "accuracy": 0.6,
+      "correct": 12,
+      "total": 20
+    },
+    "package_phishing": {
+      "accuracy": 0.875,
+      "correct": 7,
+      "total": 8
+    },
+    "prize_lottery": {
+      "accuracy": 1.0,
+      "correct": 5,
+      "total": 5
+    },
+    "romance": {
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    "safe": {
+      "accuracy": 0.9333333333333333,
+      "correct": 14,
+      "total": 15
+    },
+    "suspicious": {
+      "accuracy": 0.65,
+      "correct": 13,
+      "total": 20
+    },
+    "tech_support": {
+      "accuracy": 1.0,
+      "correct": 5,
+      "total": 5
+    }
+  },
+  "dangerous_as_needs_check": [],
+  "dangerous_as_safe": [],
+  "elapsed_seconds": 0.0015733330001239665,
+  "failures_by_category": {
+    "needs_check": [
+      "needs_check_bank_002 expected=needs_check actual=suspicious",
+      "needs_check_bank_003 expected=needs_check actual=dangerous",
+      "needs_check_bank_005 expected=needs_check actual=suspicious",
+      "needs_check_delivery_001 expected=needs_check actual=suspicious",
+      "needs_check_medical_001 expected=needs_check actual=safe",
+      "needs_check_medical_002 expected=needs_check actual=safe",
+      "needs_check_account_001 expected=needs_check actual=dangerous",
+      "needs_check_account_002 expected=needs_check actual=dangerous"
+    ],
+    "package_phishing": [
+      "package_phish_006 expected=dangerous actual=suspicious"
+    ],
+    "safe": [
+      "safe_marketing_001 expected=safe actual=needs_check"
+    ],
+    "suspicious": [
+      "suspicious_link_003 expected=suspicious actual=dangerous",
+      "suspicious_urgency_003 expected=suspicious actual=dangerous",
+      "suspicious_urgency_004 expected=suspicious actual=dangerous",
+      "suspicious_sender_001 expected=suspicious actual=dangerous",
+      "suspicious_sender_004 expected=suspicious actual=needs_check",
+      "suspicious_market_002 expected=suspicious actual=dangerous",
+      "suspicious_market_004 expected=suspicious actual=dangerous"
+    ]
+  },
+  "invalid_predictions": [],
+  "mean_tactic_recall": 0.3403333333333333,
+  "model_errors": [
+    {
+      "error": "JSONDecodeError('Extra data: line 1 column 505 (char 504)')",
+      "id": "package_phish_004"
+    },
+    {
+      "error": "JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 4 (char 3)')",
+      "id": "package_phish_005"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "suspicious_urgency_004"
+    }
+  ],
+  "risk_confusion": {
+    "dangerous->dangerous": 44,
+    "dangerous->suspicious": 1,
+    "needs_check->dangerous": 3,
+    "needs_check->needs_check": 12,
+    "needs_check->safe": 2,
+    "needs_check->suspicious": 3,
+    "safe->needs_check": 1,
+    "safe->safe": 14,
+    "suspicious->dangerous": 6,
+    "suspicious->needs_check": 1,
+    "suspicious->suspicious": 13
+  },
+  "risk_level_accuracy": 0.83,
+  "risk_level_correct": 83,
+  "safe_as_dangerous_or_suspicious": [],
+  "safety_guard_promotions": [
+    {
+      "from": "suspicious",
+      "id": "package_phish_001"
+    },
+    {
+      "from": "needs_check",
+      "id": "package_phish_003"
+    },
+    {
+      "from": "needs_check",
+      "id": "package_phish_006"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phish_001"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phish_002"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phish_003"
+    },
+    {
+      "from": "suspicious",
+      "id": "bank_phish_006"
+    },
+    {
+      "from": "needs_check",
+      "id": "tech_support_002"
+    },
+    {
+      "from": "needs_check",
+      "id": "tech_support_003"
+    },
+    {
+      "from": "needs_check",
+      "id": "prize_001"
+    },
+    {
+      "from": "suspicious",
+      "id": "prize_004"
+    },
+    {
+      "from": "suspicious",
+      "id": "prize_005"
+    },
+    {
+      "from": "suspicious",
+      "id": "job_scam_002"
+    },
+    {
+      "from": "suspicious",
+      "id": "suspicious_link_003"
+    },
+    {
+      "from": "suspicious",
+      "id": "suspicious_urgency_003"
+    },
+    {
+      "from": "suspicious",
+      "id": "suspicious_sender_001"
+    },
+    {
+      "from": "suspicious",
+      "id": "suspicious_market_002"
+    },
+    {
+      "from": "suspicious",
+      "id": "suspicious_market_004"
+    },
+    {
+      "from": "needs_check",
+      "id": "needs_check_bank_003"
+    },
+    {
+      "from": "needs_check",
+      "id": "needs_check_delivery_001"
+    },
+    {
+      "from": "suspicious",
+      "id": "needs_check_account_001"
+    },
+    {
+      "from": "needs_check",
+      "id": "needs_check_account_002"
+    }
+  ],
+  "scam_type_accuracy": 0.25,
+  "scam_type_correct": 25,
+  "suspicious_as_safe": [],
+  "unsafe_action_violations": []
+}

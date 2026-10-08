@@ -1,0 +1,446 @@
+{
+  "cases": 632,
+  "category_risk_accuracy": {
+    "bank_credential_boundary": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "bank_phishing": {
+      "accuracy": 1.0,
+      "correct": 21,
+      "total": 21
+    },
+    "benign_scary_calibration_v5": {
+      "accuracy": 0.8333333333333334,
+      "correct": 10,
+      "total": 12
+    },
+    "benign_scary_contrast": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "benign_scary_v4": {
+      "accuracy": 0.75,
+      "correct": 6,
+      "total": 8
+    },
+    "dangerous_anchor_v6": {
+      "accuracy": 1.0,
+      "correct": 16,
+      "total": 16
+    },
+    "dangerous_contrast_calibration_v5": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12
+    },
+    "external_route_phishing_v4": {
+      "accuracy": 1.0,
+      "correct": 10,
+      "total": 10
+    },
+    "family_impersonation": {
+      "accuracy": 1.0,
+      "correct": 21,
+      "total": 21
+    },
+    "family_impersonation_hard": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "total": 4
+    },
+    "family_romance_boundary": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "job_scam": {
+      "accuracy": 1.0,
+      "correct": 21,
+      "total": 21
+    },
+    "job_scam_boundary": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "legitimate_needs_check": {
+      "accuracy": 1.0,
+      "correct": 22,
+      "total": 22
+    },
+    "legitimate_notice_calibration_v5": {
+      "accuracy": 0.9166666666666666,
+      "correct": 11,
+      "total": 12
+    },
+    "legitimate_notice_hard": {
+      "accuracy": 1.0,
+      "correct": 5,
+      "total": 5
+    },
+    "marketplace_calibration_v4": {
+      "accuracy": 0.125,
+      "correct": 1,
+      "total": 8
+    },
+    "marketplace_calibration_v5": {
+      "accuracy": 0.5,
+      "correct": 6,
+      "total": 12
+    },
+    "marketplace_hard": {
+      "accuracy": 0.4,
+      "correct": 2,
+      "total": 5
+    },
+    "needs_check_official_route_v6": {
+      "accuracy": 0.9375,
+      "correct": 15,
+      "total": 16
+    },
+    "needs_check_official_route_v7": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12
+    },
+    "official_route_calibration_v5": {
+      "accuracy": 0.9375,
+      "correct": 15,
+      "total": 16
+    },
+    "official_route_contrast": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "official_route_needs_check_v8": {
+      "accuracy": 0.9166666666666666,
+      "correct": 11,
+      "total": 12
+    },
+    "official_route_v4": {
+      "accuracy": 0.9,
+      "correct": 9,
+      "total": 10
+    },
+    "package_fee_boundary": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "package_phishing": {
+      "accuracy": 1.0,
+      "correct": 21,
+      "total": 21
+    },
+    "prize_fee_boundary": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "prize_lottery": {
+      "accuracy": 1.0,
+      "correct": 21,
+      "total": 21
+    },
+    "public_pattern_marketplace_money_v7": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12
+    },
+    "public_pattern_mfa_code_v7": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12
+    },
+    "public_pattern_task_job_v7": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12
+    },
+    "public_pattern_toll_tax_benefit_v7": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12
+    },
+    "public_pattern_wrong_number_crypto_v7": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12
+    },
+    "safe_benign": {
+      "accuracy": 1.0,
+      "correct": 22,
+      "total": 22
+    },
+    "safe_everyday_family_v7": {
+      "accuracy": 0.875,
+      "correct": 14,
+      "total": 16
+    },
+    "safe_family_logistics_v8": {
+      "accuracy": 1.0,
+      "correct": 16,
+      "total": 16
+    },
+    "safe_pharmacy_clinic_v8": {
+      "accuracy": 0.5833333333333334,
+      "correct": 7,
+      "total": 12
+    },
+    "safe_scary_no_action_v6": {
+      "accuracy": 0.875,
+      "correct": 14,
+      "total": 16
+    },
+    "safe_school_pickup_v8": {
+      "accuracy": 0.8333333333333334,
+      "correct": 10,
+      "total": 12
+    },
+    "school_clinic_payment_link_danger_v8": {
+      "accuracy": 1.0,
+      "correct": 10,
+      "total": 10
+    },
+    "secrecy_payment_hard": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "total": 4
+    },
+    "suspicious_link_hard": {
+      "accuracy": 0.6,
+      "correct": 3,
+      "total": 5
+    },
+    "suspicious_not_dangerous_link_v6": {
+      "accuracy": 0.75,
+      "correct": 9,
+      "total": 12
+    },
+    "suspicious_not_dangerous_marketplace_v6": {
+      "accuracy": 0.5625,
+      "correct": 9,
+      "total": 16
+    },
+    "suspicious_urgency_calibration_v5": {
+      "accuracy": 0.8,
+      "correct": 8,
+      "total": 10
+    },
+    "suspicious_urgency_hard": {
+      "accuracy": 1.0,
+      "correct": 5,
+      "total": 5
+    },
+    "tech_support": {
+      "accuracy": 1.0,
+      "correct": 21,
+      "total": 21
+    },
+    "tech_support_boundary": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "tech_support_long_json_lock": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12
+    },
+    "wrong_number_investment_danger_v8": {
+      "accuracy": 1.0,
+      "correct": 12,
+      "total": 12
+    },
+    "wrong_number_social_no_money_v8": {
+      "accuracy": 0.7,
+      "correct": 7,
+      "total": 10
+    }
+  },
+  "dangerous_as_needs_check": [],
+  "dangerous_as_safe": [],
+  "elapsed_seconds": 8372.322368553001,
+  "failures_by_category": {
+    "benign_scary_calibration_v5": [
+      "benign_scary_calibration_v5_00_01 expected=safe actual=needs_check",
+      "benign_scary_calibration_v5_00_10 expected=safe actual=needs_check"
+    ],
+    "benign_scary_v4": [
+      "benign_scary_v4_00_02 expected=safe actual=needs_check",
+      "benign_scary_v4_00_07 expected=safe actual=needs_check"
+    ],
+    "legitimate_notice_calibration_v5": [
+      "legitimate_notice_calibration_v5_00_01 expected=needs_check actual=safe"
+    ],
+    "marketplace_calibration_v4": [
+      "marketplace_calibration_v4_00_01 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v4_00_02 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v4_00_03 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v4_00_04 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v4_00_05 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v4_00_06 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v4_00_07 expected=suspicious actual=dangerous"
+    ],
+    "marketplace_calibration_v5": [
+      "marketplace_calibration_v5_00_00 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v5_00_01 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v5_00_03 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v5_00_06 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v5_00_09 expected=suspicious actual=dangerous",
+      "marketplace_calibration_v5_00_10 expected=suspicious actual=dangerous"
+    ],
+    "marketplace_hard": [
+      "marketplace_hard_00_00 expected=suspicious actual=dangerous",
+      "marketplace_hard_00_01 expected=suspicious actual=dangerous",
+      "marketplace_hard_00_02 expected=suspicious actual=dangerous"
+    ],
+    "needs_check_official_route_v6": [
+      "needs_check_official_route_v6_00_02 expected=needs_check actual=dangerous"
+    ],
+    "official_route_calibration_v5": [
+      "official_route_calibration_v5_00_02 expected=needs_check actual=dangerous"
+    ],
+    "official_route_needs_check_v8": [
+      "official_route_needs_check_v8_00_00 expected=needs_check actual=dangerous"
+    ],
+    "official_route_v4": [
+      "official_route_v4_00_07 expected=needs_check actual=dangerous"
+    ],
+    "safe_everyday_family_v7": [
+      "safe_everyday_family_v7_00_12 expected=safe actual=needs_check",
+      "safe_everyday_family_v7_00_15 expected=safe actual=needs_check"
+    ],
+    "safe_pharmacy_clinic_v8": [
+      "safe_pharmacy_clinic_v8_00_00 expected=safe actual=needs_check",
+      "safe_pharmacy_clinic_v8_00_01 expected=safe actual=needs_check",
+      "safe_pharmacy_clinic_v8_00_05 expected=safe actual=needs_check",
+      "safe_pharmacy_clinic_v8_00_06 expected=safe actual=needs_check",
+      "safe_pharmacy_clinic_v8_00_07 expected=safe actual=needs_check"
+    ],
+    "safe_scary_no_action_v6": [
+      "safe_scary_no_action_v6_00_05 expected=safe actual=needs_check",
+      "safe_scary_no_action_v6_00_15 expected=safe actual=needs_check"
+    ],
+    "safe_school_pickup_v8": [
+      "safe_school_pickup_v8_00_04 expected=safe actual=needs_check",
+      "safe_school_pickup_v8_00_09 expected=safe actual=needs_check"
+    ],
+    "suspicious_link_hard": [
+      "suspicious_link_hard_00_00 expected=suspicious actual=dangerous",
+      "suspicious_link_hard_00_02 expected=suspicious actual=dangerous"
+    ],
+    "suspicious_not_dangerous_link_v6": [
+      "suspicious_not_dangerous_link_v6_00_04 expected=suspicious actual=dangerous",
+      "suspicious_not_dangerous_link_v6_00_05 expected=suspicious actual=dangerous",
+      "suspicious_not_dangerous_link_v6_00_10 expected=suspicious actual=dangerous"
+    ],
+    "suspicious_not_dangerous_marketplace_v6": [
+      "suspicious_not_dangerous_marketplace_v6_00_07 expected=suspicious actual=needs_check",
+      "suspicious_not_dangerous_marketplace_v6_00_10 expected=suspicious actual=dangerous",
+      "suspicious_not_dangerous_marketplace_v6_00_11 expected=suspicious actual=dangerous",
+      "suspicious_not_dangerous_marketplace_v6_00_12 expected=suspicious actual=dangerous",
+      "suspicious_not_dangerous_marketplace_v6_00_13 expected=suspicious actual=dangerous",
+      "suspicious_not_dangerous_marketplace_v6_00_14 expected=suspicious actual=needs_check",
+      "suspicious_not_dangerous_marketplace_v6_00_15 expected=suspicious actual=dangerous"
+    ],
+    "suspicious_urgency_calibration_v5": [
+      "suspicious_urgency_calibration_v5_00_08 expected=suspicious actual=safe",
+      "suspicious_urgency_calibration_v5_00_09 expected=suspicious actual=needs_check"
+    ],
+    "wrong_number_social_no_money_v8": [
+      "wrong_number_social_no_money_v8_00_03 expected=suspicious actual=safe",
+      "wrong_number_social_no_money_v8_00_06 expected=suspicious actual=safe",
+      "wrong_number_social_no_money_v8_00_09 expected=suspicious actual=safe"
+    ]
+  },
+  "invalid_predictions": [],
+  "mean_tactic_recall": 0.9069092827004219,
+  "model_errors": [],
+  "risk_confusion": {
+    "dangerous->dangerous": 314,
+    "needs_check->dangerous": 4,
+    "needs_check->needs_check": 108,
+    "needs_check->safe": 1,
+    "safe->needs_check": 15,
+    "safe->safe": 107,
+    "suspicious->dangerous": 26,
+    "suspicious->needs_check": 3,
+    "suspicious->safe": 4,
+    "suspicious->suspicious": 50
+  },
+  "risk_level_accuracy": 0.9161392405063291,
+  "risk_level_correct": 579,
+  "safe_as_dangerous_or_suspicious": [],
+  "safety_guard_promotions": [
+    {
+      "from": "suspicious",
+      "id": "secrecy_payment_hard_00_02"
+    },
+    {
+      "from": "suspicious",
+      "id": "suspicious_link_hard_00_02"
+    },
+    {
+      "from": "suspicious",
+      "id": "marketplace_calibration_v4_00_06"
+    },
+    {
+      "from": "suspicious",
+      "id": "marketplace_calibration_v5_00_06"
+    },
+    {
+      "from": "needs_check",
+      "id": "suspicious_urgency_calibration_v5_00_05"
+    },
+    {
+      "from": "suspicious",
+      "id": "suspicious_not_dangerous_link_v6_00_05"
+    },
+    {
+      "from": "needs_check",
+      "id": "suspicious_not_dangerous_link_v6_00_10"
+    },
+    {
+      "from": "suspicious",
+      "id": "public_pattern_wrong_number_crypto_v7_00_03"
+    },
+    {
+      "from": "needs_check",
+      "id": "public_pattern_wrong_number_crypto_v7_00_10"
+    },
+    {
+      "from": "suspicious",
+      "id": "wrong_number_investment_danger_v8_00_04"
+    },
+    {
+      "from": "needs_check",
+      "id": "wrong_number_investment_danger_v8_00_05"
+    },
+    {
+      "from": "needs_check",
+      "id": "wrong_number_investment_danger_v8_00_11"
+    },
+    {
+      "from": "safe",
+      "id": "wrong_number_social_no_money_v8_00_02"
+    },
+    {
+      "from": "suspicious",
+      "id": "safe_school_pickup_v8_00_10"
+    }
+  ],
+  "scam_type_accuracy": 0.8876582278481012,
+  "scam_type_correct": 561,
+  "suspicious_as_safe": [
+    "suspicious_urgency_calibration_v5_00_08",
+    "wrong_number_social_no_money_v8_00_03",
+    "wrong_number_social_no_money_v8_00_06",
+    "wrong_number_social_no_money_v8_00_09"
+  ],
+  "unsafe_action_violations": []
+}

@@ -1,0 +1,148 @@
+{
+  "cases": 100,
+  "category_risk_accuracy": {
+    "bank_phishing": {
+      "accuracy": 0.5,
+      "correct": 4,
+      "total": 8
+    },
+    "family_impersonation": {
+      "accuracy": 1.0,
+      "correct": 7,
+      "total": 7
+    },
+    "gift_card": {
+      "accuracy": 1.0,
+      "correct": 7,
+      "total": 7
+    },
+    "job_scam": {
+      "accuracy": 0.5,
+      "correct": 1,
+      "total": 2
+    },
+    "needs_check": {
+      "accuracy": 0.75,
+      "correct": 15,
+      "total": 20
+    },
+    "package_phishing": {
+      "accuracy": 0.625,
+      "correct": 5,
+      "total": 8
+    },
+    "prize_lottery": {
+      "accuracy": 0.4,
+      "correct": 2,
+      "total": 5
+    },
+    "romance": {
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    "safe": {
+      "accuracy": 0.9333333333333333,
+      "correct": 14,
+      "total": 15
+    },
+    "suspicious": {
+      "accuracy": 0.9,
+      "correct": 18,
+      "total": 20
+    },
+    "tech_support": {
+      "accuracy": 0.6,
+      "correct": 3,
+      "total": 5
+    }
+  },
+  "dangerous_as_needs_check": [
+    "package_phish_003",
+    "package_phish_006",
+    "bank_phish_001",
+    "bank_phish_002",
+    "bank_phish_003",
+    "tech_support_002",
+    "tech_support_003",
+    "prize_001"
+  ],
+  "dangerous_as_safe": [],
+  "elapsed_seconds": 0.0001381660003971774,
+  "failures_by_category": {
+    "bank_phishing": [
+      "bank_phish_001 expected=dangerous actual=needs_check",
+      "bank_phish_002 expected=dangerous actual=needs_check",
+      "bank_phish_003 expected=dangerous actual=needs_check",
+      "bank_phish_006 expected=dangerous actual=suspicious"
+    ],
+    "job_scam": [
+      "job_scam_002 expected=dangerous actual=suspicious"
+    ],
+    "needs_check": [
+      "needs_check_bank_002 expected=needs_check actual=suspicious",
+      "needs_check_bank_005 expected=needs_check actual=suspicious",
+      "needs_check_medical_001 expected=needs_check actual=safe",
+      "needs_check_medical_002 expected=needs_check actual=safe",
+      "needs_check_account_001 expected=needs_check actual=suspicious"
+    ],
+    "package_phishing": [
+      "package_phish_001 expected=dangerous actual=suspicious",
+      "package_phish_003 expected=dangerous actual=needs_check",
+      "package_phish_006 expected=dangerous actual=needs_check"
+    ],
+    "prize_lottery": [
+      "prize_001 expected=dangerous actual=needs_check",
+      "prize_004 expected=dangerous actual=suspicious",
+      "prize_005 expected=dangerous actual=suspicious"
+    ],
+    "safe": [
+      "safe_marketing_001 expected=safe actual=needs_check"
+    ],
+    "suspicious": [
+      "suspicious_urgency_004 expected=suspicious actual=dangerous",
+      "suspicious_sender_004 expected=suspicious actual=needs_check"
+    ],
+    "tech_support": [
+      "tech_support_002 expected=dangerous actual=needs_check",
+      "tech_support_003 expected=dangerous actual=needs_check"
+    ]
+  },
+  "invalid_predictions": [],
+  "mean_tactic_recall": 0.24033333333333332,
+  "model_errors": [
+    {
+      "error": "JSONDecodeError('Extra data: line 1 column 505 (char 504)')",
+      "id": "package_phish_004"
+    },
+    {
+      "error": "JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 4 (char 3)')",
+      "id": "package_phish_005"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "suspicious_urgency_004"
+    }
+  ],
+  "risk_confusion": {
+    "dangerous->dangerous": 32,
+    "dangerous->needs_check": 8,
+    "dangerous->suspicious": 5,
+    "needs_check->needs_check": 15,
+    "needs_check->safe": 2,
+    "needs_check->suspicious": 3,
+    "safe->needs_check": 1,
+    "safe->safe": 14,
+    "suspicious->dangerous": 1,
+    "suspicious->needs_check": 1,
+    "suspicious->suspicious": 18
+  },
+  "risk_level_accuracy": 0.79,
+  "risk_level_correct": 79,
+  "safe_as_dangerous_or_suspicious": [],
+  "safety_guard_promotions": [],
+  "scam_type_accuracy": 0.17,
+  "scam_type_correct": 17,
+  "suspicious_as_safe": [],
+  "unsafe_action_violations": []
+}

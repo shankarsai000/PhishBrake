@@ -1,0 +1,108 @@
+{
+  "cases": 100,
+  "category_risk_accuracy": {
+    "bank_phishing": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "family_impersonation": {
+      "accuracy": 0.8571428571428571,
+      "correct": 6,
+      "total": 7
+    },
+    "gift_card": {
+      "accuracy": 1.0,
+      "correct": 7,
+      "total": 7
+    },
+    "job_scam": {
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2
+    },
+    "needs_check": {
+      "accuracy": 0.7,
+      "correct": 14,
+      "total": 20
+    },
+    "package_phishing": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "prize_lottery": {
+      "accuracy": 0.8,
+      "correct": 4,
+      "total": 5
+    },
+    "romance": {
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3
+    },
+    "safe": {
+      "accuracy": 0.9333333333333333,
+      "correct": 14,
+      "total": 15
+    },
+    "suspicious": {
+      "accuracy": 0.95,
+      "correct": 19,
+      "total": 20
+    },
+    "tech_support": {
+      "accuracy": 1.0,
+      "correct": 5,
+      "total": 5
+    }
+  },
+  "dangerous_as_needs_check": [],
+  "dangerous_as_safe": [],
+  "elapsed_seconds": 1046.960536471,
+  "failures_by_category": {
+    "family_impersonation": [
+      "family_impersonation_006 expected=dangerous actual=suspicious"
+    ],
+    "needs_check": [
+      "needs_check_bank_003 expected=needs_check actual=suspicious",
+      "needs_check_bank_005 expected=needs_check actual=dangerous",
+      "needs_check_delivery_005 expected=needs_check actual=safe",
+      "needs_check_medical_001 expected=needs_check actual=safe",
+      "needs_check_medical_002 expected=needs_check actual=safe",
+      "needs_check_school_001 expected=needs_check actual=safe"
+    ],
+    "prize_lottery": [
+      "prize_005 expected=dangerous actual=suspicious"
+    ],
+    "safe": [
+      "safe_marketing_001 expected=safe actual=needs_check"
+    ],
+    "suspicious": [
+      "suspicious_sender_005 expected=suspicious actual=dangerous"
+    ]
+  },
+  "invalid_predictions": [],
+  "mean_tactic_recall": 0.1725,
+  "model_errors": [],
+  "risk_confusion": {
+    "dangerous->dangerous": 43,
+    "dangerous->suspicious": 2,
+    "needs_check->dangerous": 1,
+    "needs_check->needs_check": 14,
+    "needs_check->safe": 4,
+    "needs_check->suspicious": 1,
+    "safe->needs_check": 1,
+    "safe->safe": 14,
+    "suspicious->dangerous": 1,
+    "suspicious->suspicious": 19
+  },
+  "risk_level_accuracy": 0.9,
+  "risk_level_correct": 90,
+  "safe_as_dangerous_or_suspicious": [],
+  "safety_guard_promotions": [],
+  "scam_type_accuracy": 0.38,
+  "scam_type_correct": 38,
+  "suspicious_as_safe": [],
+  "unsafe_action_violations": []
+}

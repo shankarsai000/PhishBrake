@@ -1,0 +1,151 @@
+{
+  "cases": 100,
+  "category_risk_accuracy": {
+    "bank_phishing": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "family_impersonation": {
+      "accuracy": 0.7142857142857143,
+      "correct": 5,
+      "total": 7
+    },
+    "gift_card": {
+      "accuracy": 1.0,
+      "correct": 7,
+      "total": 7
+    },
+    "job_scam": {
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2
+    },
+    "needs_check": {
+      "accuracy": 0.4,
+      "correct": 8,
+      "total": 20
+    },
+    "package_phishing": {
+      "accuracy": 1.0,
+      "correct": 8,
+      "total": 8
+    },
+    "prize_lottery": {
+      "accuracy": 1.0,
+      "correct": 5,
+      "total": 5
+    },
+    "romance": {
+      "accuracy": 0.6666666666666666,
+      "correct": 2,
+      "total": 3
+    },
+    "safe": {
+      "accuracy": 1.0,
+      "correct": 15,
+      "total": 15
+    },
+    "suspicious": {
+      "accuracy": 0.1,
+      "correct": 2,
+      "total": 20
+    },
+    "tech_support": {
+      "accuracy": 1.0,
+      "correct": 5,
+      "total": 5
+    }
+  },
+  "dangerous_as_safe": [],
+  "elapsed_seconds": 952.045116586,
+  "failures_by_category": {
+    "family_impersonation": [
+      "family_impersonation_003 expected=dangerous actual=needs_check",
+      "family_impersonation_004 expected=dangerous actual=needs_check"
+    ],
+    "needs_check": [
+      "needs_check_bank_005 expected=needs_check actual=dangerous",
+      "needs_check_delivery_001 expected=needs_check actual=safe",
+      "needs_check_delivery_002 expected=needs_check actual=dangerous",
+      "needs_check_delivery_003 expected=needs_check actual=safe",
+      "needs_check_delivery_004 expected=needs_check actual=safe",
+      "needs_check_delivery_005 expected=needs_check actual=safe",
+      "needs_check_medical_001 expected=needs_check actual=safe",
+      "needs_check_medical_002 expected=needs_check actual=safe",
+      "needs_check_account_001 expected=needs_check actual=dangerous",
+      "needs_check_account_002 expected=needs_check actual=dangerous",
+      "needs_check_school_001 expected=needs_check actual=safe",
+      "needs_check_billing_001 expected=needs_check actual=safe"
+    ],
+    "romance": [
+      "romance_003 expected=dangerous actual=needs_check"
+    ],
+    "suspicious": [
+      "suspicious_link_001 expected=suspicious actual=dangerous",
+      "suspicious_link_002 expected=suspicious actual=dangerous",
+      "suspicious_link_003 expected=suspicious actual=dangerous",
+      "suspicious_link_004 expected=suspicious actual=needs_check",
+      "suspicious_link_005 expected=suspicious actual=dangerous",
+      "suspicious_urgency_002 expected=suspicious actual=dangerous",
+      "suspicious_urgency_003 expected=suspicious actual=dangerous",
+      "suspicious_urgency_005 expected=suspicious actual=needs_check",
+      "suspicious_sender_001 expected=suspicious actual=needs_check",
+      "suspicious_sender_002 expected=suspicious actual=dangerous",
+      "suspicious_sender_003 expected=suspicious actual=dangerous",
+      "suspicious_sender_004 expected=suspicious actual=needs_check",
+      "suspicious_sender_005 expected=suspicious actual=dangerous",
+      "suspicious_market_001 expected=suspicious actual=safe",
+      "suspicious_market_002 expected=suspicious actual=dangerous",
+      "suspicious_market_003 expected=suspicious actual=safe",
+      "suspicious_market_004 expected=suspicious actual=safe",
+      "suspicious_market_005 expected=suspicious actual=safe"
+    ]
+  },
+  "invalid_predictions": [],
+  "mean_tactic_recall": 0.18616666666666667,
+  "model_errors": [
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "suspicious_urgency_001"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "suspicious_urgency_004"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "suspicious_market_001"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "suspicious_market_004"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "suspicious_market_005"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "needs_check_account_001"
+    }
+  ],
+  "risk_confusion": {
+    "dangerous->dangerous": 42,
+    "dangerous->needs_check": 3,
+    "needs_check->dangerous": 4,
+    "needs_check->needs_check": 8,
+    "needs_check->safe": 8,
+    "safe->safe": 15,
+    "suspicious->dangerous": 10,
+    "suspicious->needs_check": 4,
+    "suspicious->safe": 4,
+    "suspicious->suspicious": 2
+  },
+  "risk_level_accuracy": 0.67,
+  "risk_level_correct": 67,
+  "safe_as_dangerous_or_suspicious": [],
+  "scam_type_accuracy": 0.11,
+  "scam_type_correct": 11,
+  "unsafe_action_violations": []
+}

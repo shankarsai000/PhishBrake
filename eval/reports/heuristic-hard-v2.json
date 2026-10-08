@@ -1,0 +1,151 @@
+{
+  "cases": 215,
+  "category_risk_accuracy": {
+    "bank_phishing": {
+      "accuracy": 1.0,
+      "correct": 23,
+      "total": 23
+    },
+    "family_impersonation": {
+      "accuracy": 1.0,
+      "correct": 23,
+      "total": 23
+    },
+    "family_impersonation_hard": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "total": 4
+    },
+    "job_scam": {
+      "accuracy": 1.0,
+      "correct": 22,
+      "total": 22
+    },
+    "legitimate_needs_check": {
+      "accuracy": 0.36363636363636365,
+      "correct": 8,
+      "total": 22
+    },
+    "legitimate_notice_hard": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 7
+    },
+    "marketplace_hard": {
+      "accuracy": 0.6,
+      "correct": 3,
+      "total": 5
+    },
+    "package_phishing": {
+      "accuracy": 0.6956521739130435,
+      "correct": 16,
+      "total": 23
+    },
+    "prize_lottery": {
+      "accuracy": 1.0,
+      "correct": 22,
+      "total": 22
+    },
+    "safe_benign": {
+      "accuracy": 1.0,
+      "correct": 22,
+      "total": 22
+    },
+    "safe_hard": {
+      "accuracy": 1.0,
+      "correct": 5,
+      "total": 5
+    },
+    "secrecy_payment_hard": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "total": 4
+    },
+    "suspicious_link_hard": {
+      "accuracy": 0.8,
+      "correct": 4,
+      "total": 5
+    },
+    "suspicious_urgency_hard": {
+      "accuracy": 0.6,
+      "correct": 3,
+      "total": 5
+    },
+    "tech_support": {
+      "accuracy": 1.0,
+      "correct": 23,
+      "total": 23
+    }
+  },
+  "dangerous_as_needs_check": [],
+  "dangerous_as_safe": [],
+  "elapsed_seconds": 0.0037871249987802003,
+  "failures_by_category": {
+    "legitimate_needs_check": [
+      "legitimate_needs_check_0854 expected=needs_check actual=safe",
+      "legitimate_needs_check_0862 expected=needs_check actual=safe",
+      "legitimate_needs_check_0878 expected=needs_check actual=safe",
+      "legitimate_needs_check_0886 expected=needs_check actual=safe",
+      "legitimate_needs_check_0902 expected=needs_check actual=safe",
+      "legitimate_needs_check_0910 expected=needs_check actual=safe",
+      "legitimate_needs_check_0926 expected=needs_check actual=safe",
+      "legitimate_needs_check_0934 expected=needs_check actual=safe",
+      "legitimate_needs_check_0950 expected=needs_check actual=safe",
+      "legitimate_needs_check_0958 expected=needs_check actual=safe",
+      "legitimate_needs_check_0974 expected=needs_check actual=safe",
+      "legitimate_needs_check_0982 expected=needs_check actual=safe",
+      "legitimate_needs_check_0998 expected=needs_check actual=safe",
+      "legitimate_needs_check_1006 expected=needs_check actual=safe"
+    ],
+    "legitimate_notice_hard": [
+      "legitimate_notice_hard_00_00 expected=needs_check actual=suspicious",
+      "legitimate_notice_hard_00_01 expected=needs_check actual=safe",
+      "legitimate_notice_hard_00_02 expected=needs_check actual=safe",
+      "legitimate_notice_hard_00_03 expected=needs_check actual=dangerous",
+      "legitimate_notice_hard_00_04 expected=needs_check actual=dangerous",
+      "legitimate_notice_hard_00_05 expected=needs_check actual=safe",
+      "legitimate_notice_hard_00_06 expected=needs_check actual=safe"
+    ],
+    "marketplace_hard": [
+      "marketplace_hard_00_02 expected=suspicious actual=dangerous",
+      "marketplace_hard_00_04 expected=suspicious actual=dangerous"
+    ],
+    "package_phishing": [
+      "package_phishing_0856 expected=dangerous actual=suspicious",
+      "package_phishing_0880 expected=dangerous actual=suspicious",
+      "package_phishing_0904 expected=dangerous actual=suspicious",
+      "package_phishing_0928 expected=dangerous actual=suspicious",
+      "package_phishing_0952 expected=dangerous actual=suspicious",
+      "package_phishing_0976 expected=dangerous actual=suspicious",
+      "package_phishing_1000 expected=dangerous actual=suspicious"
+    ],
+    "suspicious_link_hard": [
+      "suspicious_link_hard_00_02 expected=suspicious actual=dangerous"
+    ],
+    "suspicious_urgency_hard": [
+      "suspicious_urgency_hard_00_02 expected=suspicious actual=dangerous",
+      "suspicious_urgency_hard_00_03 expected=suspicious actual=dangerous"
+    ]
+  },
+  "invalid_predictions": [],
+  "mean_tactic_recall": 0.5736434108527132,
+  "model_errors": [],
+  "risk_confusion": {
+    "dangerous->dangerous": 137,
+    "dangerous->suspicious": 7,
+    "needs_check->dangerous": 2,
+    "needs_check->needs_check": 8,
+    "needs_check->safe": 18,
+    "needs_check->suspicious": 1,
+    "safe->safe": 27,
+    "suspicious->dangerous": 5,
+    "suspicious->suspicious": 10
+  },
+  "risk_level_accuracy": 0.8465116279069768,
+  "risk_level_correct": 182,
+  "safe_as_dangerous_or_suspicious": [],
+  "scam_type_accuracy": 0.6790697674418604,
+  "scam_type_correct": 146,
+  "suspicious_as_safe": [],
+  "unsafe_action_violations": []
+}

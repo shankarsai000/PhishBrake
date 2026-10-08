@@ -1,0 +1,336 @@
+{
+  "cases": 215,
+  "category_risk_accuracy": {
+    "bank_phishing": {
+      "accuracy": 1.0,
+      "correct": 23,
+      "total": 23
+    },
+    "family_impersonation": {
+      "accuracy": 1.0,
+      "correct": 23,
+      "total": 23
+    },
+    "family_impersonation_hard": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "total": 4
+    },
+    "job_scam": {
+      "accuracy": 1.0,
+      "correct": 22,
+      "total": 22
+    },
+    "legitimate_needs_check": {
+      "accuracy": 0.09090909090909091,
+      "correct": 2,
+      "total": 22
+    },
+    "legitimate_notice_hard": {
+      "accuracy": 0.5714285714285714,
+      "correct": 4,
+      "total": 7
+    },
+    "marketplace_hard": {
+      "accuracy": 0.6,
+      "correct": 3,
+      "total": 5
+    },
+    "package_phishing": {
+      "accuracy": 0.8695652173913043,
+      "correct": 20,
+      "total": 23
+    },
+    "prize_lottery": {
+      "accuracy": 1.0,
+      "correct": 22,
+      "total": 22
+    },
+    "safe_benign": {
+      "accuracy": 1.0,
+      "correct": 22,
+      "total": 22
+    },
+    "safe_hard": {
+      "accuracy": 0.8,
+      "correct": 4,
+      "total": 5
+    },
+    "secrecy_payment_hard": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "total": 4
+    },
+    "suspicious_link_hard": {
+      "accuracy": 0.8,
+      "correct": 4,
+      "total": 5
+    },
+    "suspicious_urgency_hard": {
+      "accuracy": 0.6,
+      "correct": 3,
+      "total": 5
+    },
+    "tech_support": {
+      "accuracy": 1.0,
+      "correct": 23,
+      "total": 23
+    }
+  },
+  "dangerous_as_needs_check": [],
+  "dangerous_as_safe": [],
+  "elapsed_seconds": 0.003469999999651918,
+  "failures_by_category": {
+    "legitimate_needs_check": [
+      "legitimate_needs_check_0846 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0854 expected=needs_check actual=safe",
+      "legitimate_needs_check_0862 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0870 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0878 expected=needs_check actual=safe",
+      "legitimate_needs_check_0886 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0894 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0918 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0926 expected=needs_check actual=safe",
+      "legitimate_needs_check_0934 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0942 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0950 expected=needs_check actual=safe",
+      "legitimate_needs_check_0958 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0966 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0974 expected=needs_check actual=safe",
+      "legitimate_needs_check_0982 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0990 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_0998 expected=needs_check actual=safe",
+      "legitimate_needs_check_1006 expected=needs_check actual=suspicious",
+      "legitimate_needs_check_1014 expected=needs_check actual=suspicious"
+    ],
+    "legitimate_notice_hard": [
+      "legitimate_notice_hard_00_00 expected=needs_check actual=suspicious",
+      "legitimate_notice_hard_00_03 expected=needs_check actual=dangerous",
+      "legitimate_notice_hard_00_04 expected=needs_check actual=dangerous"
+    ],
+    "marketplace_hard": [
+      "marketplace_hard_00_02 expected=suspicious actual=dangerous",
+      "marketplace_hard_00_04 expected=suspicious actual=dangerous"
+    ],
+    "package_phishing": [
+      "package_phishing_0856 expected=dangerous actual=suspicious",
+      "package_phishing_0904 expected=dangerous actual=suspicious",
+      "package_phishing_0976 expected=dangerous actual=suspicious"
+    ],
+    "safe_hard": [
+      "safe_hard_00_02 expected=safe actual=needs_check"
+    ],
+    "suspicious_link_hard": [
+      "suspicious_link_hard_00_02 expected=suspicious actual=dangerous"
+    ],
+    "suspicious_urgency_hard": [
+      "suspicious_urgency_hard_00_02 expected=suspicious actual=dangerous",
+      "suspicious_urgency_hard_00_03 expected=suspicious actual=dangerous"
+    ]
+  },
+  "invalid_predictions": [],
+  "mean_tactic_recall": 0.31356589147286823,
+  "model_errors": [
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "legitimate_needs_check_0854"
+    },
+    {
+      "error": "JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 4 (char 3)')",
+      "id": "package_phishing_0856"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "prize_lottery_0876"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "legitimate_needs_check_0878"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "bank_phishing_0897"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "package_phishing_0904"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "prize_lottery_0924"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "legitimate_needs_check_0926"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "bank_phishing_0937"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "legitimate_needs_check_0950"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "legitimate_needs_check_0974"
+    },
+    {
+      "error": "JSONDecodeError('Expecting property name enclosed in double quotes: line 1 column 4 (char 3)')",
+      "id": "package_phishing_0976"
+    },
+    {
+      "error": "JSONDecodeError('Extra data: line 1 column 527 (char 526)')",
+      "id": "package_phishing_0984"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "legitimate_needs_check_0998"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "bank_phishing_1001"
+    },
+    {
+      "error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+      "id": "suspicious_urgency_hard_00_03"
+    }
+  ],
+  "risk_confusion": {
+    "dangerous->dangerous": 141,
+    "dangerous->suspicious": 3,
+    "needs_check->dangerous": 2,
+    "needs_check->needs_check": 6,
+    "needs_check->safe": 6,
+    "needs_check->suspicious": 15,
+    "safe->needs_check": 1,
+    "safe->safe": 26,
+    "suspicious->dangerous": 5,
+    "suspicious->suspicious": 10
+  },
+  "risk_level_accuracy": 0.8511627906976744,
+  "risk_level_correct": 183,
+  "safe_as_dangerous_or_suspicious": [],
+  "safety_guard_promotions": [
+    {
+      "from": "needs_check",
+      "id": "package_phishing_0840"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phishing_0841"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phishing_0849"
+    },
+    {
+      "from": "needs_check",
+      "id": "tech_support_0859"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phishing_0881"
+    },
+    {
+      "from": "needs_check",
+      "id": "tech_support_0883"
+    },
+    {
+      "from": "needs_check",
+      "id": "package_phishing_0888"
+    },
+    {
+      "from": "needs_check",
+      "id": "prize_lottery_0900"
+    },
+    {
+      "from": "needs_check",
+      "id": "tech_support_0907"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phishing_0921"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phishing_0929"
+    },
+    {
+      "from": "needs_check",
+      "id": "tech_support_0931"
+    },
+    {
+      "from": "needs_check",
+      "id": "package_phishing_0936"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phishing_0945"
+    },
+    {
+      "from": "needs_check",
+      "id": "tech_support_0955"
+    },
+    {
+      "from": "needs_check",
+      "id": "package_phishing_0960"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phishing_0961"
+    },
+    {
+      "from": "needs_check",
+      "id": "bank_phishing_0969"
+    },
+    {
+      "from": "needs_check",
+      "id": "tech_support_0979"
+    },
+    {
+      "from": "needs_check",
+      "id": "tech_support_1003"
+    },
+    {
+      "from": "needs_check",
+      "id": "job_scam_1013"
+    },
+    {
+      "from": "needs_check",
+      "id": "family_impersonation_1018"
+    },
+    {
+      "from": "suspicious",
+      "id": "marketplace_hard_00_02"
+    },
+    {
+      "from": "suspicious",
+      "id": "marketplace_hard_00_04"
+    },
+    {
+      "from": "suspicious",
+      "id": "suspicious_link_hard_00_02"
+    },
+    {
+      "from": "suspicious",
+      "id": "suspicious_urgency_hard_00_02"
+    },
+    {
+      "from": "needs_check",
+      "id": "legitimate_notice_hard_00_00"
+    },
+    {
+      "from": "suspicious",
+      "id": "legitimate_notice_hard_00_03"
+    },
+    {
+      "from": "needs_check",
+      "id": "legitimate_notice_hard_00_04"
+    }
+  ],
+  "scam_type_accuracy": 0.26046511627906976,
+  "scam_type_correct": 56,
+  "suspicious_as_safe": [],
+  "unsafe_action_violations": []
+}
